@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../../assets/logo.svg";
-import Button from "../Button";
+import Button from "../UI/Button";
 import SmallNav from "./SmallNav";
 
 function Navbar() {
@@ -14,10 +14,10 @@ function Navbar() {
 
   return (
     <>
-      <div className="mt-5 hidden md:block">
+      <div className="mt-6 hidden md:block">
         <div className="w-11/12	 lg:w-4/5	 mx-auto flex justify-between">
           <img src={Logo} alt="logo" />
-          <div className="flex gap-x-10 rounded-2xl	pr-3 font-medium	 bg-light  justify-center">
+          <div className="flex gap-x-10 rounded-2xl	pr-4 font-medium	 bg-light  justify-center">
             <Button type={"black"}>Home</Button>
             {navigationItem.map((item) => {
               return (
