@@ -11,6 +11,7 @@ export default {
       },
       colors:{
         light:'#F8F9FD',
+        dark:"#1B1B1E",
         orange:"#FF5C00",
         'orange-100':'#DC8558',
         'light-orange':'#fff5ee',

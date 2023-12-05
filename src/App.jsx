@@ -1,6 +1,7 @@
 import ComplementaryFeatures from "./components/ComplementaryFeatures";
 import Faq from "./components/Faq";
 import Features from "./components/Features";
+import Footer from "./components/Footer";
 import MainContent from "./components/MainContent";
 import Navbar from "./components/Navbar/Navbar";
 import Packages from "./components/Packages";
@@ -14,6 +15,7 @@ function App() {
       <Packages/>
       <Features/>
       <Faq/>
+      <Footer/>
     </div>
   );
 }

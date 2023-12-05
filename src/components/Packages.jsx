@@ -26,11 +26,23 @@ function Packages() {
       </div>
       {/* heading section ends */}
       {/* package section start */}
-      <div className="grid grid-cols-5 mt-16">
-       <div className="col-span-2">1</div>
-       <div>2</div>
-       <div>3</div>
-       <div>4</div>
+      <div className="grid grid-cols-4 mt-16">
+        <div className="">
+          <p>Price</p>
+          <p>Price</p>
+          <p>Price</p>
+          <p>Price</p>
+          <p>Price</p>
+        </div>
+        <div>
+          <div className="bg-green-100 w-10/12 mx-auto rounded-xl">
+            <div className="bg-green-200 flex justify-center place-content-center p-3 rounded-xl ">
+              <span className="font-semibold text-2xl	text-green">Basic</span>
+            </div>
+          </div>
+        </div>
+        <div>3</div>
+        <div>4</div>
       </div>
     </div>
   );

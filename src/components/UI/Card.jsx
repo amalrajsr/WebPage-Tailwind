@@ -8,18 +8,18 @@ function Card({ content, index }) {
         <div
           className={`${
             index % 2 !== 0 && "order-last"
-          } bg-ash border-8 rounded-2xl	hidden lg:block col-span-6 m-8 border-darkGray h-[21.875rem] w-[30.375rem]`}
+          } bg-ash border-8 rounded-2xl	 lg:block md:col-span-6 hidden m-8 border-darkGray h-10/12 w-10/12  xl:h-[21.875rem] xl:-[30.375rem]`}
         ></div>
         {/* left section ends*/}
         {/* right section */}
-        <div className="col-span-12 md:col-span-6 m-8 flex flex-col	justify-between">
-          <div>
+        <div className="col-span-12 lg:col-span-6 m-8 flex flex-col	justify-between">
+          {/* <div className=""> */}
             <h3 className="text-xl md:text-[2rem] leading-10	  font-medium	">
               {content.heading}
             </h3>
             <p className="mt-5">{content.description}</p>
-          </div>
-          <div className="flex flex-col md:flex-row gap-3">
+          {/* </div> */}
+          <div className="flex flex-col lg:flex-row gap-3 mt-3 lg:mt-0">
             <Button styles={"my-2 md:my-0"} type={"orange"}>
               Launch Demo
             </Button>
