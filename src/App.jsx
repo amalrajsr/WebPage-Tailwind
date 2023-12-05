@@ -1,13 +1,17 @@
 import ComplementaryFeatures from "./components/ComplementaryFeatures";
+import Features from "./components/Features";
 import MainContent from "./components/MainContent";
 import Navbar from "./components/Navbar/Navbar";
+import Packages from "./components/Packages";
 
 function App() {
   return (
-    <div className="flex flex-col gap-y-10">
+    <div className="flex flex-col gap-y-12">
       <Navbar />
       <MainContent/>
       <ComplementaryFeatures/>
+      <Packages/>
+      <Features/>
     </div>
   );
 }

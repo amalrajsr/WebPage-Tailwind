@@ -17,10 +17,10 @@ function MainContent() {
   return (
     <>
       <div className="grid grid-cols-12">
-        <div className="col-span-12  md:col-span-8 mx-auto">
+        <div className="col-span-12  lg:col-span-8 mx-auto">
           <img src={banner1} alt="banner" className="w-11/12 mx-auto md:w-full" />
         </div>
-        <div className=" hidden md:block col-span-4">
+        <div className=" hidden lg:block col-span-4">
           <img src={banner2} alt="banner" className="" />
         </div>
       </div>
@@ -33,7 +33,7 @@ function MainContent() {
 
           {restaurants.map((item) => {
         
-          return  <div key={item} className="col-span-3 sm:col-span-2 md:col-span-1 flex justify-center">
+          return  <div key={item} className="col-span-3 sm:col-span-2 lg:col-span-1 flex justify-center">
               <img src={item} alt="logo" className=""/>
             </div>;
           })}
