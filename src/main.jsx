@@ -5,7 +5,7 @@ import "./index.css";
 import ErrorBoundary from "./utils/ErrorBoundary.jsx";
 import ErrorPage from "./components/UI/ErrorPage.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
-    <ErrorBoundary fallback={ErrorPage}>
+    <ErrorBoundary fallback={<ErrorPage/>}>
       <App />
     </ErrorBoundary>
 );

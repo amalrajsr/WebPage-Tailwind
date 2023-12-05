@@ -29,7 +29,7 @@ function MainContent() {
         <p className="text-center font-medium	">
           Trusted by over 50 thousand restaurants in 10+ countries
         </p>
-        <div className="grid grid-cols-6 mx-auto mt-5">
+        <div className="gap-5 grid grid-cols-6 mx-auto mt-5">
 
           {restaurants.map((item) => {
         

@@ -15,9 +15,10 @@ function Button({ type, children, styles}) {
         (outline = "1px solid #FF5C00");
       break;
     case "white":
-      (buttonColor = "#ffff"),
-        (textColor = "#19191C"),
-        (outline = " 1px solid #19191C");
+     (buttonColor = "#f8f9fd"),
+        (textColor = "#19191C"), 
+        (outline = " 1px solid #19191C")
+        break;
     default:
       (buttonColor = "#ffff"),
         (textColor = "#FF5C00"),
@@ -26,9 +27,9 @@ function Button({ type, children, styles}) {
 
   const buttonStyle = {
     backgroundColor: buttonColor,
-    padding: "7px 18px",
+    padding: "10px 24px",
     borderRadius: "20px",
-    color: textColor, // Set text color to white
+    color: textColor, 
     cursor: "pointer",
     border: "1px",
     outline: outline,

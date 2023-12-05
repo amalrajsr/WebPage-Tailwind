@@ -33,7 +33,9 @@ function SmallNav({ toggle, handleToggle }) {
             })}
 
             <div>
-              <Button styles={'text-xs'}>Sign in</Button>
+              <a className="text-orange" href="/">
+                Sign in
+              </a>
             </div>
           </div>
         </div>
