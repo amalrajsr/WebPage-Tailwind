@@ -21,7 +21,7 @@ function ComplementaryFeatures() {
   ];
   return (
     <div className="">
-      <div className="w-3/4 mx-auto">
+      <div className="w-10/12 mx-auto">
         <h1 className="text-2xl md:text-[4rem] md:leading-tight	 text-center md:text-left mt-10 md:mt-16 font-medium">
           Complementary features <br></br> for your business needs
         </h1>

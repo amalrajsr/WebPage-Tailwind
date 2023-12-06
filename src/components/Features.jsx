@@ -67,7 +67,7 @@ function Features() {
     },
   ];
   return (
-    <div className="w-9/12 mx-auto mt-5 grid grid-cols-12 gap-5 md:gap-0">
+    <div className="w-10/12 mx-auto mt-5 grid grid-cols-12 gap-5 md:gap-0">
       {/* left section */}
       <div className="col-span-12 md:col-span-6">
         <h1 className="text-2xl md:text-[4rem] md:leading-tight	 text-center md:text-left  font-medium">

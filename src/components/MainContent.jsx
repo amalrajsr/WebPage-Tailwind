@@ -25,7 +25,7 @@ function MainContent() {
         </div>
       </div>
       {/* logo section */}
-      <div className="w-3/4 mx-auto">
+      <div className="w-10/12 mx-auto">
         <p className="text-center font-medium	">
           Trusted by over 50 thousand restaurants in 10+ countries
         </p>
