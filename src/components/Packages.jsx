@@ -114,7 +114,7 @@ function Packages() {
                     <th
                       key={plan.name}
                       scope="col"
-                      className={` ${plan.backgroundColor1} text-2xl  rounded-t-2xl relative`}
+                      className={` ${plan.backgroundColor1} border-r-8 border-white text-2xl  rounded-t-3xl  relative`}
                     >
                       {plan.bestChoice && (
                         <span className="bg-orange italic absolute top-0 border-2 border-white  transform translate-x-[-50%] translate-y-[-50%] text-white text-xs lg:py-1 lg:px-2 rounded-full">
@@ -122,7 +122,7 @@ function Packages() {
                           <span className="hiddenxl:inline">😊</span>
                         </span>
                       )}
-                      <div className=" mx-auto rounded-xl ">
+                      <div className=" mx-auto rounded-2xl ">
                         <div
                           className={`${plan.backgroundColor2}  flex justify-center place-content-center p-4 rounded-2xl `}
                         >
@@ -144,7 +144,7 @@ function Packages() {
                 ))}
               </tr>
             </thead>
-            <tbody className="space-y-6 text-center divide-y divide-[#E2E5E7]">
+            <tbody className="space-y-6  text-center divide-y divide-[#E2E5E7]">
               {features.map((feature, index) => (
                 <tr key={index}>
                   <th scope="row" className="text-left">
@@ -153,7 +153,7 @@ function Packages() {
                   {plans.map((plan) => (
                     <td
                       key={plan.name}
-                      className={`${plan.backgroundColor1} ${
+                      className={`border-r-8 border-white  ${plan.backgroundColor1} ${
                         index === features.length - 1 && "rounded-b-2xl"
                       }`}
                     >
