@@ -15,7 +15,7 @@ function SmallNav({ toggle, handleToggle }) {
   return (
     <>
       {toggle ? (
-        <div className="md:hidden transition-all duration-300 ease-in-out w-1/5 min-w-fit z-20 fixed right-0 h-screen bg-[#f9fbfa]">
+        <div className="md:hidden transition-all duration-400 ease-in w-1/5 min-w-fit z-20 fixed right-0 h-screen bg-[#f9fbfa]">
           <div className="flex m-5 flex-col gap-5 cursor-pointer">
             <div className="flex justify-between">
               <img src={Logo} className="w-10 md:w-1/2" alt="logo of coca" />
@@ -41,7 +41,7 @@ function SmallNav({ toggle, handleToggle }) {
           </div>
         </div>
       ) : (
-        <div className="md:hidden transition-all duration-300 ease-in-out mt-5">
+        <div className="md:hidden transition-all duration-300 ease-in mt-5">
           <div className="flex justify-between mx-5">
             <img src={Logo} alt="logo of coca" />
             <FaAlignJustify
