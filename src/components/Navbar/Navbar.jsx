@@ -14,7 +14,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="mt-6 hidden md:block">
+      <nav className="mt-6 hidden md:block">
         <div className="w-11/12	 lg:w-4/5	 mx-auto flex justify-between">
           <img src={Logo} alt="logo" />
           <div className="flex gap-x-10 rounded-2xl	pr-4 font-medium	 bg-light  justify-center">
@@ -31,7 +31,7 @@ function Navbar() {
             <Button>Sign in</Button>
           </div>
         </div>
-      </div>
+      </nav>
 
 {/* navbar for smaller screen */}
       <SmallNav toggle={toggle} handleToggle={(value) => setToggle(value)} />

@@ -10,8 +10,8 @@ function Footer() {
 
     const footerOptions=['Features','Pricing','Blog','Resource','Terms & Conditions','Privacy Policy']
   return (
-    <div className="w-11/12 mx-auto">
-      <img src={footerImage} alt="footer" loading="lazygi" className="rounded-t-xl w-full" />
+    <footer className="w-11/12 mx-auto">
+      <img src={footerImage} alt="describing unforgettable customer experience"  loading="lazy" className="rounded-t-xl w-full" />
       <div className="footer bg-dark lg:h-[37.375rem] flex items-center ">
         <div className="md:m-auto  h-3/4 w-10/12 mx-auto ">
           <h1 className="text-lg md:text-5xl md:leading-tight mx-auto text-white text-center md:text-left  font-medium">
@@ -62,7 +62,7 @@ function Footer() {
           {/* footer section ends */}
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 
