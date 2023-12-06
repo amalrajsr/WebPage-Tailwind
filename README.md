@@ -30,17 +30,16 @@ Follow these instructions to get the project up and running on your local machin
 
 1. Clone the repository:
 
-   ```bash
    git clone https://github.com/amalrajsr/WebPage-Tailwind.git
- 2. Navigate to WebPage-Tailwind directory:
+   
+2. Navigate to WebPage-Tailwind directory:
 
-   ```bash
    cd WebPage-Tailwind
 
-3. Install dependencies :
+3. Install dependencies:
 
-   ```bash
-npm install
+   npm install
 
 ### Usage
-npm run dev
+
+   npm run dev
