@@ -86,7 +86,7 @@ function Packages() {
         <div className="my-auto  ">
           <div className="rounded-2xl flex justify-between  bg-light">
             <Button type={"black"}>Mount</Button>
-            <span className="my-auto font-semibold mx-3 md:mx-0">Annual</span>
+            <span className="my-auto font-semibold mr-6 ">Annual</span>
           </div>
 
           <div className="hidden  mt-4 lg:flex gap-2">
@@ -107,23 +107,24 @@ function Packages() {
             <thead>
               <tr>
                 <th className="">
-                  <p className="text-start mt-10">Price</p>
+                  <p className="text-start mt-16">Price</p>
                 </th>
                 {plans.map((plan) => (
                   <>
                     <th
                       key={plan.name}
                       scope="col"
-                      className={` ${plan.backgroundColor1} rounded-t-xl`}
+                      className={` ${plan.backgroundColor1} text-2xl  rounded-t-2xl relative`}
                     >
-                      {/* {plan.bestChoice && (
-                      <span className="bg-red-500  text-white text-xs  px-2 rounded-full">
-                        Best choice
-                      </span>
-                    )} */}
+                      {plan.bestChoice && (
+                        <span className="bg-orange italic absolute top-0 border-2 border-white  transform translate-x-[-50%] translate-y-[-50%] text-white text-xs lg:py-1 lg:px-2 rounded-full">
+                          Best choice
+                          <span className="hiddenxl:inline">😊</span>
+                        </span>
+                      )}
                       <div className=" mx-auto rounded-xl ">
                         <div
-                          className={`${plan.backgroundColor2}  flex justify-center place-content-center p-3 rounded-xl `}
+                          className={`${plan.backgroundColor2}  flex justify-center place-content-center p-4 rounded-2xl `}
                         >
                           <span
                             className={`font-semibold text-2xl ${plan.textColor}	`}
@@ -132,7 +133,7 @@ function Packages() {
                           </span>
                         </div>
                       </div>
-                      <p className={`mb-3`}>
+                      <p className={`my-3`}>
                         <span className={` text-2xl font-bold sm:text-4xl`}>
                           {plan.price}
                         </span>
@@ -150,7 +151,12 @@ function Packages() {
                     <h3 className="py-3">{feature}</h3>
                   </th>
                   {plans.map((plan) => (
-                    <td key={plan.name} className={`${plan.backgroundColor1}`}>
+                    <td
+                      key={plan.name}
+                      className={`${plan.backgroundColor1} ${
+                        index === features.length - 1 && "rounded-b-2xl"
+                      }`}
+                    >
                       {plan.features[0][feature] ? (
                         <img
                           src={IncludeIcon}
