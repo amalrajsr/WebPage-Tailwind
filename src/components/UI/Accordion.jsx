@@ -17,7 +17,7 @@ function Accordion({ items }) {
             onClick={() => handleToggle(index)}
           >
             <div className={`${activeIndex === index && 'text-orange'} font-medium text-lg md:text-2xl	`}>{item.title}</div>
-            <div>{activeIndex === index ? <FaMinus className="text-orange"/>: <FaPlus />}</div>
+            <div>{activeIndex === index ? <FaMinus aria-label="close" className="text-orange"/>: <FaPlus  aria-label="open"/>}</div>
           </div>
           {activeIndex === index && (
             <div className="p-4 bg-white transition-opacity duration-500 ease-in">

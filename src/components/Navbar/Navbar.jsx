@@ -18,7 +18,7 @@ function Navbar() {
         <div className="w-11/12	 lg:w-4/5	 mx-auto flex justify-between">
           <img src={Logo} alt="logo" />
           <div className="flex gap-x-10 rounded-2xl	pr-4 font-medium	 bg-light  justify-center">
-            <Button type={"black"}>Home</Button>
+            <Button  type={"black"}>Home</Button>
             {navigationItem.map((item) => {
               return (
                 <a className="my-auto" key={item.name} href={item.redirect}>

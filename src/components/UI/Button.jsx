@@ -1,6 +1,6 @@
 import React from "react";
 
-function Button({ type, children, styles}) {
+function Button({ type, children, styles,label}) {
   let buttonColor, textColor, outline, fontWeight;
   switch (type) {
     case "black":
@@ -36,7 +36,7 @@ function Button({ type, children, styles}) {
     fontWeight: fontWeight ?? 600,
   };
 
-  return <button className={styles} style={buttonStyle}>{children}</button>;
+  return <button aria-label={label} className={styles} style={buttonStyle}>{children}</button>;
 }
 
 export default Button;

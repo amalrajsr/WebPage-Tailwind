@@ -20,6 +20,7 @@ function SmallNav({ toggle, handleToggle }) {
             <div className="flex justify-between">
               <img src={Logo} className="w-10 md:w-1/2" alt="logo of coca" />
               <RxCross2
+               aria-label="Close navbar"
                 className="my-auto text-xl"
                 onClick={() => handleToggle(false)}
               />
@@ -44,6 +45,7 @@ function SmallNav({ toggle, handleToggle }) {
           <div className="flex justify-between mx-5">
             <img src={Logo} alt="logo of coca" />
             <FaAlignJustify
+              aria-label="Open navbar"
               className="text-xl my-auto"
               onClick={() => handleToggle(true)}
             />
