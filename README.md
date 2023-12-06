@@ -1,8 +1,45 @@
-# React + Vite
+# WebPage-Tailwind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+This repository contains the source code for a simple webpage built with Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+
+
+## Features
+
+- **Responsive Design**: The webpage is designed to be responsive and work seamlessly across various devices and screen sizes.
+- **Tailwind CSS**: Built with Tailwind CSS, a utility-first CSS framework that makes styling your website faster and more efficient.
+- **Boilerplate Code**: Provides a clean and organized structure, making it easy to understand and build upon.
+
+## Getting Started
+
+Follow these instructions to get the project up and running on your local machine.
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+
+1. Clone the repository:
+
+   git clone https://github.com/amalrajsr/WebPage-Tailwind.git
+   
+2. Navigate to WebPage-Tailwind directory:
+
+   cd WebPage-Tailwind
+
+3. Install dependencies:
+
+   npm install
+
+### Usage
+
+   npm run dev
