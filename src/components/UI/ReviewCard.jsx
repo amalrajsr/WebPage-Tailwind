@@ -26,7 +26,7 @@ function ReviewCard({ data }) {
   return (
     <div
       key={data.name}
-      className={`flex justify-center rounded-2xl mb-6 ${backgroundColor}`}
+      className={`flex justify-center rounded-2xl mb-6 transition ease-in-out delay-5 duration-300 hover:-translate-y-1 ${backgroundColor}`}
     >
       <div className="m-9">
         <p className={`${textColor}  md:text-2xl md:font-medium`}>

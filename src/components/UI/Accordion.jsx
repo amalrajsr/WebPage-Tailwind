@@ -9,7 +9,7 @@ function Accordion({ items }) {
   };
 
   return (
-    <div>
+    <div className="">
       {items.map((item, index) => (
         <div key={index} className="mb-4">
           <div
@@ -20,7 +20,7 @@ function Accordion({ items }) {
             <div>{activeIndex === index ? <FaMinus aria-label="close" className="text-orange"/>: <FaPlus  aria-label="open"/>}</div>
           </div>
           {activeIndex === index && (
-            <div className="p-4 bg-white transition-opacity duration-500 ease-in">
+            <div className="p-4 bg-white transition ease-in duration-300">
               <p className="md:text-xl">{item.content}</p>
             </div>
           )}

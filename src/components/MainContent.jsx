@@ -62,7 +62,7 @@ function MainContent() {
                 key={item.url}
                 className="col-span-3 sm:col-span-2 lg:col-span-1 flex justify-center"
               >
-                <img src={item.url} alt={`${item.alt} restaurant`} className="" />
+                <img src={item.url} alt={`${item.alt} restaurant`} className="transition ease-in-out delay-5 duration-300 hover:-translate-y-1" />
               </div>
             );
           })}

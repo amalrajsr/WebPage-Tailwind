@@ -46,7 +46,7 @@ function Footer() {
             </div>
             <div className="grid grid-cols-6 gap-3 md:gap-0 ">
                 {footerOptions.map((item)=>{
-                    return <p key={item} className="col-span-6 md:col-span-1 mx-auto  text-white">{item}</p>
+                    return <p key={item} className="col-span-6 md:col-span-1 mx-auto cursor-pointer text-white">{item}</p>
                 })}
             </div>
            

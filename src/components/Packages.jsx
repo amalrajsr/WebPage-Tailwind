@@ -21,6 +21,7 @@ function Packages() {
       textColor: "text-green",
       backgroundColor1: "bg-green-100",
       backgroundColor2: "bg-green-200",
+      backgroundColor3: "bg-green",
       bestChoice: false,
       features: [
         {
@@ -41,6 +42,7 @@ function Packages() {
       textColor: "text-blue",
       backgroundColor1: "bg-blue-100",
       backgroundColor2: "bg-blue-200",
+      backgroundColor3: "bg-blue",
       bestChoice: true,
       features: [
         {
@@ -61,6 +63,7 @@ function Packages() {
       textColor: "text-purple",
       backgroundColor1: "bg-purple-100",
       backgroundColor2: "bg-purple-200",
+      backgroundColor3: "bg-purple",
       bestChoice: false,
       features: [
         {
@@ -102,7 +105,7 @@ function Packages() {
       {/* package section start */}
 
       <section>
-        <div className="container mx-auto p-6 overflow-x-auto">
+        <div className="container mx-auto py-6 overflow-x-auto">
           <table className="w-full">
             <thead>
               <tr>
@@ -110,37 +113,35 @@ function Packages() {
                   <p className="text-start mt-16">Price</p>
                 </th>
                 {plans.map((plan) => (
-                  <>
-                    <th
-                      key={plan.name}
-                      scope="col"
-                      className={` ${plan.backgroundColor1} border-r-8 border-white text-2xl  rounded-t-3xl  relative`}
-                    >
-                      {plan.bestChoice && (
-                        <span className="bg-orange italic absolute top-0 border-2 border-white  transform translate-x-[-50%] translate-y-[-50%] text-white text-xs lg:py-1 lg:px-2 rounded-full">
-                          Best choice
-                          <span className="hiddenxl:inline">😊</span>
-                        </span>
-                      )}
-                      <div className=" mx-auto rounded-2xl ">
-                        <div
-                          className={`${plan.backgroundColor2}  flex justify-center place-content-center p-4 rounded-2xl `}
+                  <th
+                    key={plan.name}
+                    scope="col"
+                    className={` ${plan.backgroundColor1} border-r-8 border-white text-2xl  rounded-t-3xl  relative`}
+                  >
+                    {plan.bestChoice && (
+                      <span className="bg-orange italic absolute top-0 border-2 border-white  transform translate-x-[-50%] translate-y-[-50%] text-white text-xs lg:py-1 lg:px-2 rounded-full">
+                        Best choice
+                        <span className="hidden xl:inline">😊</span>
+                      </span>
+                    )}
+                    <div className=" mx-auto rounded-2xl ">
+                      <div
+                        className={`${plan.backgroundColor2}  flex justify-center place-content-center p-4 rounded-2xl `}
+                      >
+                        <span
+                          className={`font-semibold text-2xl ${plan.textColor}	`}
                         >
-                          <span
-                            className={`font-semibold text-2xl ${plan.textColor}	`}
-                          >
-                            {plan.name}
-                          </span>
-                        </div>
-                      </div>
-                      <p className={`my-3`}>
-                        <span className={` text-2xl font-bold sm:text-4xl`}>
-                          {plan.price}
+                          {plan.name}
                         </span>
-                        <span className="font-medium">/month</span>
-                      </p>
-                    </th>
-                  </>
+                      </div>
+                    </div>
+                    <p className={`my-3`}>
+                      <span className={` text-xl font-semibold md:text-4xl`}>
+                        {plan.price}
+                      </span>
+                      <span className="text-base font-semibold	">/month</span>
+                    </p>
+                  </th>
                 ))}
               </tr>
             </thead>
@@ -153,15 +154,15 @@ function Packages() {
                   {plans.map((plan) => (
                     <td
                       key={plan.name}
-                      className={`border-r-8 border-white  ${plan.backgroundColor1} ${
-                        index === features.length - 1 && "rounded-b-2xl"
-                      }`}
+                      className={`border-r-8 border-white  ${
+                        plan.backgroundColor1
+                      } ${index === features.length - 1 && "rounded-b-2xl"}`}
                     >
                       {plan.features[0][feature] ? (
                         <img
                           src={IncludeIcon}
                           alt="item includes"
-                          className="bg-green rounded-full p-1 m-auto"
+                          className={`${plan.backgroundColor3} rounded-full p-1 m-auto`}
                         />
                       ) : (
                         <img

@@ -34,9 +34,10 @@ function Button({ type, children, styles,label}) {
     border: "1px",
     outline: outline,
     fontWeight: fontWeight ?? 600,
+
   };
 
-  return <button aria-label={label} className={styles} style={buttonStyle}>{children}</button>;
+  return <button aria-label={label} className={`${styles} transition duration-300 hover:shadow-xl `} style={buttonStyle}>{children}</button>;
 }
 
 export default Button;

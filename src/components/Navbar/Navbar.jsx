@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../../assets/logo.svg";
 import Button from "../UI/Button";
-import SmallNav from "./SmallNav";
+import Sidebar from "./Sidebar";
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);
@@ -34,7 +34,7 @@ function Navbar() {
       </nav>
 
 {/* navbar for smaller screen */}
-      <SmallNav toggle={toggle} handleToggle={(value) => setToggle(value)} />
+      <Sidebar toggle={toggle} handleToggle={(value) => setToggle(value)} />
     </>
   );
 }

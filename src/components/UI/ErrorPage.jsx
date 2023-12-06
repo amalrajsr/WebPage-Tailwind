@@ -15,7 +15,6 @@ function ErrorPage() {
                   try refreshing the page or contact our support team if the
                   problem persists
                 </p>
-               
               </div>
             </div>
           </div>

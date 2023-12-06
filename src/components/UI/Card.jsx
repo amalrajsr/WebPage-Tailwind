@@ -13,12 +13,10 @@ function Card({ content, index }) {
         {/* left section ends*/}
         {/* right section */}
         <div className="col-span-12 lg:col-span-6 m-8 flex flex-col	justify-between">
-          {/* <div className=""> */}
             <h3 className="text-xl md:text-[2rem] leading-10	  font-medium	">
               {content.heading}
             </h3>
             <p className="mt-5">{content.description}</p>
-          {/* </div> */}
           <div className="flex flex-col lg:flex-row gap-3 mt-3 lg:mt-0">
             <Button styles={"my-2 md:my-0"} type={"orange"}>
               Launch Demo

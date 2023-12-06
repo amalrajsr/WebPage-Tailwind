@@ -2,9 +2,8 @@ import React from "react";
 import { RxCross2 } from "react-icons/rx";
 import { FaAlignJustify } from "react-icons/fa";
 import Logo from "../../assets/logo.svg";
-import Button from "../UI/Button";
 
-function SmallNav({ toggle, handleToggle }) {
+function Sidebar({ toggle, handleToggle }) {
   const navigationItem = [
     { name: "Home", redirect: "/" },
     { name: "Features", redirect: "/" },
@@ -56,4 +55,4 @@ function SmallNav({ toggle, handleToggle }) {
   );
 }
 
-export default SmallNav;
+export default Sidebar;
